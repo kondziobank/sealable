@@ -1,0 +1,30 @@
+ - Lack of Docstrings does not help language server
+ - General lack of documentation
+
+    It is a common meme that always when you need documentation there is only usage guide and 
+    when you need usage guide or example you only find documentation. For Sealius first case is 
+    always true. There is no documentation and you need to resort to reading code. This isn't that 
+    painful as the code is really clear and well-written.
+
+    Nevertheless, good docs are a necessary for any larger library and especially for something like
+    a framework.
+
+ - Sample is not MVP
+ - I hate software
+ - JS linter can point possible typos
+ - Generall lack of shortcuts (or maybe not)
+ - Lack of separation between core components, usability additions and typical app components.
+ - Lack of exceptions
+
+    Exceptions are not the best way of hadling edge cases but one cannot make a language
+    that was build around handling exceptions not do that. It is easy to see no session in 
+    Context as a common condition but a method is there to get user data should always return 
+    user data. It shouldn't be called in the first place if session is empty. Yes - exceptions
+    may break your application in runtime.
+
+    I would argue is even worse to let programmer handle edge case where they expected a session 
+    to be there but method returned null. In best case this will break the application (just like
+    exception would). In worst there will be data corruption.
+
+ - No overloading for koa Context
+    If this is common 

@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"module": "CommonJS",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"strictNullChecks": true,
+		"target": "ES2022",
+		"esModuleInterop": true,
+		"lib": ["esnext"],
+		"outDir": "../../dist/back",
+		"keyofStringsOnly": true,
+		"checkJs": false,
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"skipLibCheck": true
+	},
+	"include": ["./**/*", "./*"]
+}

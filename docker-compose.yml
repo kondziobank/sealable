@@ -1,0 +1,21 @@
+version: "3.2"
+services:
+  db:
+    image: mongo:4.4-bionic
+    ports:
+      - "127.0.0.1:${PORT:-2074}7:27017"
+  test:
+    image: sealious-app:latest
+    build:
+      context: ./docker
+      dockerfile: ./test.Dockerfile
+    volumes:
+      - ./:/opt/sealious-app/
+      - /tmp:/tmp
+      - ./docker_node_modules:/opt/sealious-app/node_modules
+    user: ${USER_ID:-1000}:${GROUP_ID:-1000}
+  mailcatcher:
+    image: schickling/mailcatcher:latest
+    ports:
+      - "127.0.0.1:${PORT:-108}2:1080"
+      - "127.0.0.1:${PORT:-102}6:1025"
