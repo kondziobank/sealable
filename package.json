@@ -31,7 +31,7 @@
 		"@babel/core": "^7.12.10",
 		"@hotwired/turbo": "^7.1.0",
 		"@koa/router": "^10.1.1",
-		"@playwright/test": "^1.36.1",
+		"@playwright/test": "^1.40.1",
 		"@sealcode/sealgen": "^0.8.47",
 		"@sealcode/ts-predicates": "^0.4.3",
 		"@types/kill-port": "^2.0.0",
