@@ -36,7 +36,7 @@
 		"@sealcode/ts-predicates": "^0.4.3",
 		"@types/kill-port": "^2.0.0",
 		"hint": "^7.0.1",
-		"locreq": "^2.0.2",
+		"locreq": "^2.4.1",
 		"multiple-scripts-tmux": "^1.0.4",
 		"nodemon": "^3.0.1",
 		"sealious": "^0.17.33",
